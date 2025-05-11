@@ -299,17 +299,27 @@ header{
 .team{
   padding: 3rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  justify-content: space-around;
   background: linear-gradient(331deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 45%, rgba(60, 130, 130, 1) 100%);
 }
-
+@media (min-width:768px) {
+  .team{
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
 .team__text{
-  max-width: 30rem;
+  max-width: 25rem;
   line-height: 1.4lh;
 }
 .team__heading{
+  margin-top: 0;
   font-size: 4rem;
+  line-height: 1;
 }
 .team__text p{
   font-size: 1.5rem;
@@ -319,7 +329,13 @@ header{
   max-width: 40rem;
 
 }
-.team__img img{
+.team__img img{  
   border-radius: 25px;
   height: 40rem;
+}
+.contact{
+  display: flex;
+  justify-content: space-between  ;
+  padding: 3rem;
+  background: linear-gradient(21deg,rgba(170, 100, 35, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(60, 130, 130, 1) 100%);
 }

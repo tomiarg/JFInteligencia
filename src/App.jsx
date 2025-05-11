@@ -1,4 +1,4 @@
-import { Dashboard, Header, Main, SectionSoluciones, TheTeam } from "./components"
+import { Contact, Dashboard, Header, Main, SectionSoluciones, TheTeam } from "./components"
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <SectionSoluciones/>
       <Dashboard/>
       <TheTeam/>
+      <Contact/>
     </>
   )
 }
