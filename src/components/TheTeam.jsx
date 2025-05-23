@@ -1,4 +1,5 @@
-import perfil from "../assets/img/fotoPerfil.jpg"
+import perfil from "../assets/img/perfilJF.jpeg"
+import circulos from "../assets/img/circulos.png"
 
 export const TheTeam = () => {
   return (
@@ -11,7 +12,7 @@ export const TheTeam = () => {
                 <p>Somos un equipo multidisciplinario
 apasionado por transformar números en
 decisiones.
-Analistas, especialistas en Power BI,
+Analistas, especialistas en Power BI y App sheet,
 desarrolladores y estrategas que
 combinamos experiencia técnica con una
 mirada estratégica del negocio.
@@ -21,7 +22,8 @@ resultados y el compromiso con cada
 cliente.</p>
             </div>
             <div className="team__img">
-                <img src={perfil} alt="" />
+                <img src={perfil} alt="Foto Perfil" />
+                <img className="team__imgCirculo" src={circulos} alt="Icono Circulos" />
             </div>
 
         </section>

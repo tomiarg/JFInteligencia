@@ -1,4 +1,6 @@
-import estadistica from "../assets/img/estadistica.jpg"
+
+import estadisticas from "../assets/img/videoDash.mp4"
+
 export const Dashboard = () => {
   return (
     <section className="dashboard">
@@ -26,6 +28,11 @@ claras e intuitivas</li>
 </ul>
      </div>
          <div className="dashboard__gallery">
+            <div className="dashboard__overlay"></div>
+            <video className="gallery__video" autoPlay loop muted playsInline>
+              <source  src={estadisticas} type="video/mp4"/>
+
+             </video>
                 <p className="dashboard__info">Tomá decisiones <span className="bolder">informadas, ágiles y seguras</span> con
 herramientas que se adaptan a tu operación.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMDJhYWViNGMtZjEwMy00NDI1LWFiY2YtM2ZjMzQxNDRkODdiIiwidCI6IjBkZWY2NjE3LTI3OTItNGJiNy04ZTI0LWY2NDMxZDkzYzE1ZCJ9" className="dashboard__button" target="_blank"><p className="dashboard__anchor">Mirá un ejemplo</p></a>

@@ -1,11 +1,16 @@
 import { Whatsapp, Mail, Instagram } from "../svgs"
 import logo from "../assets/img/JFlogo.png"
-
+import hero from "../assets/img/videoHero.mp4"
 
 export const Header = () => {
   return (
     <header>
+      <video className="header__video" autoPlay loop muted playsInline>
+            <source  src={hero} type="video/mp4"/>
+        
+          </video>
       <div className="overlay">
+        
         <nav className="nav">
       <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Instagram/></a>
       <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Whatsapp/></a>

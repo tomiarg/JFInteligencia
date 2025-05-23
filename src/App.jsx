@@ -1,5 +1,6 @@
-import { Contact, Dashboard, Header, Main, SectionSoluciones, TheTeam } from "./components"
+import { Contact, Dashboard, Galeria, Header, Main, SectionSoluciones, TheTeam } from "./components"
 
+import 'swiper/css';
 function App() {
   return (
     <>
@@ -7,6 +8,7 @@ function App() {
       <Main/>
       <SectionSoluciones/>
       <Dashboard/>
+      <Galeria/>
       <TheTeam/>
       <Contact/>
     </>
