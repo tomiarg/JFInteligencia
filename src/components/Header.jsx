@@ -12,9 +12,9 @@ export const Header = () => {
       <div className="overlay">
         
         <nav className="nav">
-      <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Instagram/></a>
-      <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Whatsapp/></a>
-      <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Mail/></a>
+      <a href="https://www.instagram.com/jfinteligenciadenegocio/" target="_blank" className="nav__socialMedia-btn"><Instagram/></a>
+      <a href="https://wa.me/543515724658"  target="_blank" className="nav__socialMedia-btn"><Whatsapp/></a>
+      <a href="mailto:comercial@jfin.com.ar" target="_blank" className="nav__socialMedia-btn"><Mail/></a>
       </nav>
     <div  className="header">
       <div>

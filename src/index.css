@@ -8,6 +8,10 @@
   --swiper-theme-color: #000;
 }
 
+.swiper-notification{
+  display: none;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -28,6 +32,34 @@ img {
   max-width: 100%;
   display: block;
 }
+
+[class$="__button"]{
+  position: relative;
+  z-index: 2;
+  padding: .6rem;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  border: 1px solid white;
+  border-radius: 18px;
+  color: white;
+  transition: color 1s ease;
+  transition: background-color 1s ease;
+  transition: border 1s ease;
+}
+@media (min-width:768px) {
+  [class$="__button"]{
+    width: 12rem;
+  }
+}
+[class$="__button"]:hover{
+  color:#aa6423;
+  border: 1px solid #aa6423;
+  background-color: #aa642329;
+}
+
+
 .color--naranja{
   color: #aa6423;
 }
@@ -42,6 +74,7 @@ header{
 }
 .nav{
   position: relative;
+  z-index: 2;
   padding: 3rem 3rem 0 3rem;
   display: flex;
   justify-content: center;
@@ -80,6 +113,9 @@ header{
   backdrop-filter: blur(1px);
   pointer-events: none;
 }
+.overlay .nav {
+  pointer-events: auto;
+}
 header video{
   position: absolute;
   top: 0;
@@ -87,7 +123,7 @@ header video{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  z-index: -1;
   padding: 0
 }
 
@@ -172,6 +208,12 @@ header video{
 .main__imageContein--heading{
   font-size: 2.2rem;
 }
+
+.main__button{
+  border: 1px solid white;
+  color: white;
+} 
+
 .soluciones{
   padding: 7rem 3rem;
   display: flex;
@@ -319,26 +361,7 @@ header video{
   text-align: center;
 }
 
-.dashboard__button{
-  position: relative;
-  z-index: 2;
-  padding: .6rem;
-  text-decoration: none;
-  display: block;
-  width: 12rem;
-  margin: 0 auto 2rem auto;
-  border: 1px solid #3c8282;
-  border-radius: 18px;
-  color: #3c8282;
-  transition: color 1s ease;
-  transition: background-color 1s ease;
-  transition: border 1s ease;
-}
-.dashboard__button:hover{
-  color:#aa6423;
-  border: 1px solid #aa6423;
-  background-color: #aa642329;
-}
+
 .dashboard__anchor{
   position: relative;
   font-size: 1.1rem;
@@ -373,7 +396,8 @@ header video{
 ;
 }
 .galeria__imagen{
-  width: 90%;
+  width: 100%;
+  height: ;
   margin: 0 auto;
   border-radius: 25px;
 }
@@ -386,7 +410,15 @@ header video{
 .galeria__texto p{
   font-size: 1.4rem;
 }
+.swiper-wrapper{
+  align-items: center;
+}
 
+
+
+
+
+/* Team */
 .team{
   padding: 3rem;
   display: flex;
@@ -424,10 +456,10 @@ header video{
 .team__imgCirculo{
   display: none;
 }
-@media (min-width:768px) {
+@media (min-width:1200px) {
   .team__imgCirculo{
   display: inline-block;
-  margin-left: -6rem;
+  margin-left: -10rem;
 }
 }
 
@@ -460,7 +492,14 @@ header video{
 .contact__heading h2{
   font-size: 5rem;
   font-weight: 400;
+  text-align: center;
 }
+@media (min-width:768px) {
+  .contact__heading h2{
+    text-align: left;
+  }
+}
+
 .contact__img{
   width: 40rem;
 }
@@ -472,12 +511,19 @@ header video{
 .contact__contacts--tipe h2{
   font-size: 2.6rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .contact__contacts--tipe a{
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width:768px) {
+  .contact__contacts--tipe a, .contact__contacts--tipe h2{
+    text-align: left;
+  }
 }
 
 .footer{
@@ -490,7 +536,9 @@ header video{
   font-size: .9rem;
   color: #f5f2eb;
   margin: 0;
+  text-align: center;
 }
+
 .footer a{
   text-decoration: none;
   color: #f5f2eb;

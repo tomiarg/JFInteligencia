@@ -1,4 +1,4 @@
-import perfil from "../assets/img/perfilJF.jpeg"
+import perfil from "../assets/img/teamWork.jpg"
 import circulos from "../assets/img/circulos.png"
 
 export const TheTeam = () => {
@@ -7,7 +7,7 @@ export const TheTeam = () => {
         <section className="team">
             <div className="team__text">
                 <h3 className="team__heading">
-                    Meet the team.
+                    Quienes somos.
                 </h3>
                 <p>Somos un equipo multidisciplinario
 apasionado por transformar números en

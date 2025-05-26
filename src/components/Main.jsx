@@ -31,8 +31,9 @@ export const Main = () => {
         <div className="main__imageContein" >
             <img className="main__image" src={datosCel} alt="Imagen Main" />
             <h4 className="main__imageContein--heading">Accedé a tus datos desde cualquier dispositivo, siempre actualizados con sincronización automática.</h4>
+            <a href="mailto:comercial@jfin.com.ar" className="main__button" target="_blank"><p className="dashboard__anchor">Quiero información</p></a>
         </div>
-    
+        
     
     </main>
   )

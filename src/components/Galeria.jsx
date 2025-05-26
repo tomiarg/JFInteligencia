@@ -7,11 +7,17 @@ import 'swiper/css/pagination';
 
 
 import { Swiper, SwiperSlide } from "swiper/react"
-import pBi from "../assets/img/powerBi.png"
-import pBii from "../assets/img/powerBii.png"
-import pBiiii from "../assets/img/powerBiii.png"
-import pBiiiii from "../assets/img/powerBiiiii.png"
-import pBiiiiii from "../assets/img/powerBiiiii.png"
+
+
+import pBi from "../assets/img/costosPowerBi.png"
+import pBii from "../assets/img/menuPowerBi.png"
+import vendedores from "../assets/img/resultadosPowerBi.png"
+import ventas from "../assets/img/ventasPowerBi.png"
+import costos from "../assets/img/vendedoresPowerBi.png"
+import dashboardAppSheet from "../assets/img/dashboardAppSheet.png"
+import formCompras from "../assets/img/formAppsheet.png"
+import menuAppSheet from "../assets/img/menuAppSheet.png"
+
 
 
 
@@ -44,15 +50,17 @@ export const Galeria = () => {
 
       <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={pBi} alt="" /></SwiperSlide>
       <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={pBii} alt="" /></SwiperSlide>
-      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={pBiiii} alt="" /></SwiperSlide>
-      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={pBiiiii} alt="" /></SwiperSlide>
-      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={pBiiiiii} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={vendedores} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={ventas} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={costos} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={dashboardAppSheet} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={formCompras} alt="" /></SwiperSlide>
+      <SwiperSlide className='galeria__swiper'><img className='galeria__imagen' src={menuAppSheet} alt="" /></SwiperSlide>
     </Swiper>
       </div>
       <div className="galeria__texto">
-        <h3>Dashboards integrados con AppSheet, Power BI y tu ERP</h3>
-        <p>Visualiza en tiempo real cada etapa del proceso operativo, desde la captura en terreno hasta el análisis estratégico.
-Esta galería muestra ejemplos reales de dashboards que se integran con sistemas ERP, conectando datos clave de distintas áreas de tu empresa. Toma decisiones con una visión completa, centralizada y actualizada.
+        <h3>Dashboards integrados AppSheet y Power BI.</h3>
+        <p>Visualiza en tiempo real cada etapa del proceso operativo, desde la captura en terreno hasta el análisis estratégico. Esta galería muestra ejemplos reales de dashboards que se integran con el sistemas ERP que te brindamos, conectando datos clave de distintas áreas de tu empresa. Tomá decisiones con una visión completa, centralizada y actualizada.
         </p>
       </div>
 
